@@ -1,0 +1,22 @@
+per_page = [0,1,2,3,4,5]
+no_of_page = [154,95,36,7,6,2]
+
+total_no_page=0
+for i in no_of_page:
+    total_no_page += i
+#print(total_no_page)
+
+j = 0
+fx_total = 0
+fxlist =[];
+for i in no_of_page:
+    fxlist.append(j * i)
+    j=j+1
+#print(fxlist)
+
+for i in fxlist:
+        fx_total += i
+#print(fx_total)
+
+answer = fx_total/total_no_page
+print("Average number of misprints per page is ",answer)
